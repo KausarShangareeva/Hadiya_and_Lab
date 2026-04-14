@@ -47,6 +47,15 @@ export default function Header() {
             </a>
           ))}
         </nav>
+
+        {/* Burger */}
+        <button
+          className={`${styles.burger} ${menuOpen ? styles.burgerOpen : ""}`}
+          aria-label="Меню"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span /><span /><span />
+        </button>
       </div>
 
       {/* Mobile Menu */}

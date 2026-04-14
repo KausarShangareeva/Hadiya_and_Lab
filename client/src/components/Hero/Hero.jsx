@@ -34,9 +34,6 @@ export default function Hero({ onOrder }) {
             увлажнение, детокс и сияние — в одном ритуале.
           </p>
           <div className={styles.cta}>
-            <button className={styles.btnPrimary} onClick={onOrder}>
-              Заказать сейчас
-            </button>
             <button className={styles.btnSecondary} onClick={onOrder}>
               Смотреть продукты
             </button>

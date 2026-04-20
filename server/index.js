@@ -129,7 +129,7 @@ app.post("/api/admin/auth/telegram", (req, res) => {
   );
   res.json({
     token,
-    user: { id: data.id, username: data.username, first_name: data.first_name },
+    user: { id: data.id, username: data.username, first_name: data.first_name, photo_url: data.photo_url },
   });
 });
 

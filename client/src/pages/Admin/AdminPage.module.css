@@ -90,9 +90,17 @@
 .headerUser {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   font-size: 0.9rem;
   color: #555;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c87a72;
 }
 
 .main {

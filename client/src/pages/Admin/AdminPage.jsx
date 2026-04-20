@@ -266,6 +266,9 @@ export default function AdminPage() {
       <header className={styles.header}>
         <div className={styles.headerLogo}>✦ Hadiya&amp;Lab — Админ</div>
         <div className={styles.headerUser}>
+          {user?.photo_url && (
+            <img src={user.photo_url} alt="avatar" className={styles.avatar} />
+          )}
           <span>@{user?.username || user?.first_name}</span>
           <button className={styles.btnLogout} onClick={logout}>Выйти</button>
         </div>

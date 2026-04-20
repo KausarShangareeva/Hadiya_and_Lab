@@ -2,7 +2,7 @@
 
 <br />
 
-# ✦ Hadiya Lab
+# ✦ Hadiya&Lab
 
 ### _Masks that replace your moisturizer_
 

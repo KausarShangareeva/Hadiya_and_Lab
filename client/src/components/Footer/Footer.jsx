@@ -22,7 +22,7 @@ export default function Footer() {
             <div className={styles.logo}>
               <span className={styles.logoIcon}>✦</span>
               <span>
-                Shangareeva<span className={styles.logoAccent}> Lab</span>
+                Hadiya<span className={styles.logoAccent}>&amp;Lab</span>
               </span>
             </div>
             <p className={styles.tagline}>{f.tagline}</p>
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p className={styles.copy}>© {year} Shangareeva Lab. {f.copyright}</p>
+          <p className={styles.copy}>© {year} Hadiya&amp;Lab. {f.copyright}</p>
           <p className={styles.copy}>{f.tagline2}</p>
         </div>
       </div>

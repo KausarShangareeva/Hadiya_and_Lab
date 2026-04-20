@@ -18,7 +18,7 @@ export default function Hero({ onOrder }) {
             />
           </div>
           <div className={styles.badge}>
-            <span>✦</span> Shangareeva Lab
+            <span>✦</span> Hadiya&amp;Lab
           </div>
           <div className={styles.floatTag}>{h.floatTag}</div>
         </div>

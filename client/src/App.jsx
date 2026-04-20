@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { LanguageProvider } from './i18n/LanguageContext'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
@@ -7,8 +8,9 @@ import Reviews from './components/Reviews/Reviews'
 import OrderForm from './components/OrderForm/OrderForm'
 import Footer from './components/Footer/Footer'
 import ProductModal from './components/ProductModal/ProductModal'
+import AdminPage from './pages/Admin/AdminPage'
 
-export default function App() {
+function MainSite() {
   const [selectedProduct, setSelectedProduct] = useState('')
   const [modalProduct, setModalProduct] = useState(null)
 
@@ -22,7 +24,7 @@ export default function App() {
   }
 
   return (
-    <LanguageProvider>
+    <>
       <Header />
       <Hero onOrder={scrollToProducts} />
       <ProductList onOpenModal={setModalProduct} onSelect={handleSelectProduct} />
@@ -34,6 +36,19 @@ export default function App() {
         onClose={() => setModalProduct(null)}
         onOrder={handleSelectProduct}
       />
-    </LanguageProvider>
+    </>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <LanguageProvider>
+        <Routes>
+          <Route path="/" element={<MainSite />} />
+          <Route path="/admin" element={<AdminPage />} />
+        </Routes>
+      </LanguageProvider>
+    </BrowserRouter>
   )
 }

@@ -2,9 +2,9 @@
 
 <br />
 
-# ✦ Shangareeva Lab
+# ✦ Hadiya Lab
 
-### *Masks that replace your moisturizer*
+### _Masks that replace your moisturizer_
 
 <br />
 
@@ -111,13 +111,13 @@ Open **http://localhost:5173**
 
 ## 🎨 Color Palette
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--color-bg` | `#FDF7F4` | Page background |
-| `--color-primary` | `#C87A72` | Buttons, accents |
-| `--color-primary-light` | `#F0DDD8` | Card backgrounds |
-| `--color-dark` | `#3A3830` | Headings, dark buttons |
-| `--color-text-muted` | `#9A8B87` | Secondary text |
+| Token                   | Value     | Usage                  |
+| ----------------------- | --------- | ---------------------- |
+| `--color-bg`            | `#FDF7F4` | Page background        |
+| `--color-primary`       | `#C87A72` | Buttons, accents       |
+| `--color-primary-light` | `#F0DDD8` | Card backgrounds       |
+| `--color-dark`          | `#3A3830` | Headings, dark buttons |
+| `--color-text-muted`    | `#9A8B87` | Secondary text         |
 
 ---
 

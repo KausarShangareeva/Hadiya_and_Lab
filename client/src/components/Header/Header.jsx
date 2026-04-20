@@ -52,7 +52,7 @@ export default function Header() {
         <a href="#" className={styles.logo}>
           <span className={styles.logoIcon}>✦</span>
           <span className={styles.logoText}>
-            Hadiya<span className={styles.logoAccent}>Lab</span>
+            Hadiya<span className={styles.logoAccent}>&amp;Lab</span>
           </span>
         </a>
 
@@ -80,7 +80,7 @@ export default function Header() {
             onClick={() => setLangOpen(!langOpen)}
             aria-label="Language"
           >
-            <span className={styles.langFlag}>{current.flag}</span>
+            <span className={styles.langFlag}><current.Flag size={20} /></span>
             <span className={styles.langCode}>{current.label}</span>
             <span className={`${styles.langArrow} ${langOpen ? styles.langArrowOpen : ""}`}>▾</span>
           </button>
@@ -93,7 +93,7 @@ export default function Header() {
                   className={`${styles.langOption} ${lang === l.code ? styles.langOptionActive : ""}`}
                   onClick={() => selectLang(l.code)}
                 >
-                  <span className={styles.langFlag}>{l.flag}</span>
+                  <span className={styles.langFlag}><l.Flag size={20} /></span>
                   <span>{l.label}</span>
                 </button>
               ))}
@@ -137,7 +137,7 @@ export default function Header() {
               className={`${styles.mobileLangBtn} ${lang === l.code ? styles.mobileLangBtnActive : ""}`}
               onClick={() => { setLang(l.code); setMenuOpen(false); }}
             >
-              <span>{l.flag}</span>
+              <l.Flag size={20} />
               <span>{l.label}</span>
             </button>
           ))}

@@ -66,7 +66,7 @@ export default function ProductModal({ product, onClose, onOrder }) {
           {/* Content column */}
           <div className={styles.content} dir={isRTL ? 'rtl' : 'ltr'}>
             <div className={styles.topRow}>
-              <p className={styles.brand}>Hadiya Lab</p>
+              <p className={styles.brand}>Hadiya&amp;Lab</p>
               <p className={styles.priceTag}>{product.price}</p>
             </div>
 

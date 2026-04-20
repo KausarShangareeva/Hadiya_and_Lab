@@ -1,12 +1,13 @@
 import { createContext, useContext, useState } from 'react'
 import t from './translations.json'
+import { FlagRU, FlagEN, FlagTR } from './FlagIcons'
 
 const LanguageContext = createContext(null)
 
 export const LANGUAGES = [
-  { code: 'ru', label: 'RU', flag: '🇷🇺' },
-  { code: 'en', label: 'EN', flag: '🇬🇧' },
-  { code: 'tr', label: 'TR', flag: '🇹🇷' },
+  { code: 'ru', label: 'RU', Flag: FlagRU },
+  { code: 'en', label: 'EN', Flag: FlagEN },
+  { code: 'tr', label: 'TR', Flag: FlagTR },
 ]
 
 export function LanguageProvider({ children }) {
